@@ -26,8 +26,8 @@ try:
     media_estelionato = (np.mean(array_estelionato_mes_ano))
     mediana_estelionato = (np.median(array_estelionato_mes_ano))
     distancia_media_mediana = abs((media_estelionato - mediana_estelionato) / mediana_estelionato) * 100
-    print(f'A média de estelionatos registrados é de {media_estelionato}')
-    print(f'A médiana de estelionatos registrados é de {mediana_estelionato}')
+    print(f'A média de estelionatos registrados é de {media_estelionato:.2f}')
+    print(f'A médiana de estelionatos registrados é de {mediana_estelionato:.2f}')
     print(f'Índice de verificação de tendência central: {distancia_media_mediana:.2f}%')
     print()
     print('Analisando os dados apresentados, com base nos cálculos estatísticos para verificação de tendência central, verifica-se assimetria considerável, com tendência a um padrão de instabilidade de número de ocorrências desse tipo de crime ao longo do tempo.')
